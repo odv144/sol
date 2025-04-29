@@ -1,77 +1,158 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Landing Page</title>
-  <link rel="stylesheet" href="css/styles.css" />
-</head>
-<body>
-
-  <!-- Menú de navegación -->
-  <nav class="navbar">
-    <ul>
-      <li><a href="#header">Inicio</a></li>
-      <li><a href="#productos">Productos</a></li>
-      <li><a href="#ubicacion">Ubicación</a></li>
-      <li><a href="#contacto">Contacto</a></li>
-      <li><a href="#pago">Forma de Pago</a></li>
-    </ul>
-  </nav>
-
-  <!-- Header -->
-  <header id="header" class="header">
-    <h1>Bienvenido a Nuestra Tienda</h1>
-    <p>Productos únicos para vos</p>
-  </header>
-
-  <!-- Sección Productos -->
-  <main>
-    <section id="productos" class="section">
-      <h2>Productos</h2>
-      <div class="productos">
-        <article class="producto">
-          <h3>Producto 1</h3>
-          <p>Descripción breve del producto.</p>
-        </article>
-        <article class="producto">
-          <h3>Producto 2</h3>
-          <p>Descripción breve del producto.</p>
-        </article>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Libreria Sol</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Menú de navegación -->
+    <nav class="navbar">
+      <div class="navbar__img">
+        <img src="/img/logo.jpg" alt="Logo de Libreria Sol" class="logo" />
       </div>
-    </section>
+      <ul>
+        <li><a href="#header">Inicio</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#ubicacion">Ubicación</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#pago">Forma de Pago</a></li>
+      </ul>
+    </nav>
 
-    <!-- Sección Ubicación -->
-    <section id="ubicacion" class="section">
-      <h2>Ubicación</h2>
-      <p>Estamos en Calle Falsa 123, Ciudad, Provincia.</p>
-    </section>
+    <!-- Header -->
+    <header id="header" class="header">
+      <!-- <div class="header__img">
+        <img src="/img/logo.jpg" alt="Logo de Libreria Sol"  />
+      </div> -->
+    </header>
 
-    <!-- Sección Contacto -->
-    <section id="contacto" class="section">
-      <h2>Contacto</h2>
-      <p>Teléfono: (123) 456-7890</p>
-      <p>Email: contacto@ejemplo.com</p>
-    </section>
+    <!-- Sección Productos -->
+    <main>
+      <section id="productos" class="section">
+        <h2>Productos</h2>
+        <div class="productos">
+          <article class="pro">
+            <h3 class="pro_titulo">Producto 1</h3>
 
-    <!-- Sección Forma de Pago -->
-    <section id="pago" class="section">
-      <h2>Forma de Pago</h2>
-      <p>Aceptamos efectivo, transferencias y tarjetas.</p>
-    </section>
-  </main>
+            <img src="/img/lapices_colores.jpg" class="pro_img" alt="Libro 1" />
 
-  <!-- Footer -->
-  <footer class="footer">
-    <ul>
-      <li><a href="#header">Inicio</a></li>
-      <li><a href="#productos">Productos</a></li>
-      <li><a href="#ubicacion">Ubicación</a></li>
-      <li><a href="#contacto">Contacto</a></li>
-      <li><a href="#pago">Forma de Pago</a></li>
-    </ul>
-    <p>&copy; 2025 - Todos los derechos reservados</p>
-  </footer>
+            <div class="pros_detalle">
+              <p>Descripción breve del producto.</p>
+              <p>Precio $12500</p>
+            </div>
+          </article>
+          <article class="pro">
+            <h3 class="pro_titulo">Producto 1</h3>
 
-</body>
+            <img src="/img/lapices_colores.jpg" class="pro_img" alt="Libro 1" />
+
+            <div class="pros_detalle">
+              <p>Descripción breve del producto.</p>
+              <p>Precio $12500</p>
+            </div>
+          </article>
+          <article class="pro">
+            <h3 class="pro_titulo">Producto 1</h3>
+
+            <img src="/img/lapices_colores.jpg" class="pro_img" alt="Libro 1" />
+
+            <div class="pros_detalle">
+              <p>Descripción breve del producto.</p>
+              <p>Precio $12500</p>
+            </div>
+          </article>
+          <article class="pro">
+            <h3 class="pro_titulo">Producto 1</h3>
+
+            <img src="/img/lapices_colores.jpg" class="pro_img" alt="Libro 1" />
+
+            <div class="pros_detalle">
+              <p>Descripción breve del producto.</p>
+              <p>Precio $12500</p>
+            </div>
+          </article>
+          <article class="pro">
+            <h3 class="pro_titulo">Producto 1</h3>
+
+            <img src="/img/lapices_colores.jpg" class="pro_img" alt="Libro 1" />
+
+            <div class="pros_detalle">
+              <p>Descripción breve del producto.</p>
+              <p>Precio $12500</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Sección Ubicación -->
+      <section id="ubicacion" class="section">
+        <h2>Ubicación</h2>
+        <p>Estamos en Estanislao Lopez y 2 de Abril, Villa Ocampo, Santa Fe.</p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3506.540772739374!2d-59.3608228!3d-28.493373499999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x944f1b4813419f1f%3A0x3093984def816772!2sLibreria%20Sol!5e0!3m2!1ses!2sar!4v1745960382303!5m2!1ses!2sar"
+          width="500"
+          height="450"
+          style="border: 2"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        >
+        </iframe>
+      </section>
+
+      <!-- Sección Contacto -->
+      <section id="contacto" class="section">
+        <h2>Contacto</h2>
+        <p>Teléfono: (123) 456-7890</p>
+        <p>Email: contacto@ejemplo.com</p>
+
+        <form action="" method="post" class="contacto-form">
+          <div class="grupo_elementos">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required />
+          </div>
+          <div class="grupo_elementos">
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required />
+          </div>
+          <div class="grupo_elementos">
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" required />
+          </div>
+          <div class="grupo_elementos">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="grupo_elementos">
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+          </div>
+          <div class="grupo_elementos">
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpiar</button>
+          </div>
+        </form>
+      </section>
+
+      <!-- Sección Forma de Pago -->
+      <section id="pago" class="section">
+        <h2>Forma de Pago</h2>
+        <p>Aceptamos efectivo, transferencias y tarjetas.</p>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <ul>
+        <li><a href="#header">Inicio</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#ubicacion">Ubicación</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#pago">Forma de Pago</a></li>
+      </ul>
+      <p>&copy; 2025 - Todos los derechos reservados</p>
+    </footer>
+  </body>
 </html>
