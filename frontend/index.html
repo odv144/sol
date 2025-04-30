@@ -4,155 +4,197 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Libreria Sol</title>
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Smythe&family=DM+Serif+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
   </head>
   <body>
-    <!-- Menú de navegación -->
-    <nav class="navbar">
-      <div class="navbar__img">
-        <img src="/img/logo.jpg" alt="Logo de Libreria Sol" class="logo" />
-      </div>
-      <ul>
-        <li><a href="#header">Inicio</a></li>
-        <li><a href="#productos">Productos</a></li>
-        <li><a href="#ubicacion">Ubicación</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-        <li><a href="#pago">Forma de Pago</a></li>
-      </ul>
-    </nav>
+    <header class="header">
+      <div class="container">
+        <a href="#" class="logo"
+          >LIBRERIA<br />
+          S☀L</a
+        >
+        <nav class="navbar">
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="#inicio" class="nav-link">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a href="#productos" class="nav-link">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a href="#ubicacion" class="nav-link">Ubicación</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contacto" class="nav-link">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a href="/carrito.html" class="nav-link">Carrito</a>
+            </li>
+          </ul>
 
-    <!-- Header -->
-    <header id="header" class="header">
-      <!-- <div class="header__img">
-        <img src="/img/logo.jpg" alt="Logo de Libreria Sol"  />
-      </div> -->
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+        <div>
+          <img src="/img/logo.jpg" alt="Escolaris Logo" class="header-logo" />
+        </div>
+      </div>
     </header>
 
-    <!-- Sección Productos -->
     <main>
-      <section id="productos" class="section">
-        <h2>Productos</h2>
-        <div class="productos">
-          <article class="pro">
-            <h3 class="pro_titulo">Producto 1</h3>
-
-            <img src="/img/lapices_colores.jpg" class="pro_img" alt="Libro 1" />
-
-            <div class="pros_detalle">
-              <p>Descripción breve del producto.</p>
-              <p>Precio $12500</p>
+      <section id="inicio" class="hero-carousel">
+        <div class="carousel-container">
+          <div class="carousel-slide active">
+            <img
+              src="https://i.postimg.cc/Prhjz9jL/utilies.jpg"
+              alt="Materiales escolares"
+            />
+            <div class="slide-content">
+              <h1>Todo para el regreso a clases</h1>
+              <p>
+                Encuentra los mejores materiales escolares para el nuevo ciclo
+              </p>
+              <a href="#productos" class="btn">Ver productos</a>
             </div>
-          </article>
-          <article class="pro">
-            <h3 class="pro_titulo">Producto 1</h3>
-
-            <img src="/img/lapices_colores.jpg" class="pro_img" alt="Libro 1" />
-
-            <div class="pros_detalle">
-              <p>Descripción breve del producto.</p>
-              <p>Precio $12500</p>
+          </div>
+          <div class="carousel-slide">
+            <img
+              src="https://i.postimg.cc/wxwH6FNn/mochilas.jpg"
+              alt="Mochilas escolares"
+            />
+            <div class="slide-content">
+              <h1>Mochilas de calidad</h1>
+              <p>Diseños ergonómicos y resistentes para todos los grados</p>
+              <a href="#productos" class="btn">Comprar ahora</a>
             </div>
-          </article>
-          <article class="pro">
-            <h3 class="pro_titulo">Producto 1</h3>
-
-            <img src="/img/lapices_colores.jpg" class="pro_img" alt="Libro 1" />
-
-            <div class="pros_detalle">
-              <p>Descripción breve del producto.</p>
-              <p>Precio $12500</p>
+          </div>
+          <div class="carousel-slide">
+            <img
+              src="https://i.postimg.cc/qM7KRm5K/kit-lapices.webp"
+              alt="Ofertas especiales"
+            />
+            <div class="slide-content">
+              <h1>Ofertas exclusivas</h1>
+              <p>Aprovecha nuestros descuentos por compras al por mayor</p>
+              <a href="#contacto" class="btn">Contáctanos</a>
             </div>
-          </article>
-          <article class="pro">
-            <h3 class="pro_titulo">Producto 1</h3>
-
-            <img src="/img/lapices_colores.jpg" class="pro_img" alt="Libro 1" />
-
-            <div class="pros_detalle">
-              <p>Descripción breve del producto.</p>
-              <p>Precio $12500</p>
-            </div>
-          </article>
-          <article class="pro">
-            <h3 class="pro_titulo">Producto 1</h3>
-
-            <img src="/img/lapices_colores.jpg" class="pro_img" alt="Libro 1" />
-
-            <div class="pros_detalle">
-              <p>Descripción breve del producto.</p>
-              <p>Precio $12500</p>
-            </div>
-          </article>
+          </div>
+          <button class="carousel-btn prev-btn" aria-label="Anterior">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="carousel-btn next-btn" aria-label="Siguiente">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+          <div class="carousel-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+      </section>
+      <section id="productos" class="products">
+        <div class="container">
+          <h2>Categoria de Productos</h2>
+          <div class="gallery"></div>
         </div>
       </section>
 
-      <!-- Sección Ubicación -->
-      <section id="ubicacion" class="section">
-        <h2>Ubicación</h2>
-        <p>Estamos en Estanislao Lopez y 2 de Abril, Villa Ocampo, Santa Fe.</p>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3506.540772739374!2d-59.3608228!3d-28.493373499999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x944f1b4813419f1f%3A0x3093984def816772!2sLibreria%20Sol!5e0!3m2!1ses!2sar!4v1745960382303!5m2!1ses!2sar"
-          width="500"
-          height="450"
-          style="border: 2"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        >
-        </iframe>
+      <section id="ubicacion" class="location">
+        <div class="container">
+          <h2>Nuestra Ubicación</h2>
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3506.5409301661775!2d-59.36339772380219!3d-28.493368761096743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x944f1b4813419f1f%3A0x3093984def816772!2sLibreria%20Sol!5e0!3m2!1ses!2sar!4v1746041934681!5m2!1ses!2sar"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
       </section>
 
-      <!-- Sección Contacto -->
-      <section id="contacto" class="section">
-        <h2>Contacto</h2>
-        <p>Teléfono: (123) 456-7890</p>
-        <p>Email: contacto@ejemplo.com</p>
-
-        <form action="" method="post" class="contacto-form">
-          <div class="grupo_elementos">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required />
-          </div>
-          <div class="grupo_elementos">
-            <label for="telefono">Teléfono:</label>
-            <input type="tel" id="telefono" name="telefono" required />
-          </div>
-          <div class="grupo_elementos">
-            <label for="direccion">Dirección:</label>
-            <input type="text" id="direccion" name="direccion" required />
-          </div>
-          <div class="grupo_elementos">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required />
-          </div>
-          <div class="grupo_elementos">
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" required></textarea>
-          </div>
-          <div class="grupo_elementos">
-            <button type="submit">Enviar</button>
-            <button type="reset">Limpiar</button>
-          </div>
-        </form>
-      </section>
-
-      <!-- Sección Forma de Pago -->
-      <section id="pago" class="section">
-        <h2>Forma de Pago</h2>
-        <p>Aceptamos efectivo, transferencias y tarjetas.</p>
+      <section id="contacto" class="contact">
+        <div class="container">
+          <h2>Contacto</h2>
+          <form
+            class="contact-form"
+            action="https://formspree.io/f/xnnpvwpg"
+            method="POST"
+          >
+            <div class="form-group">
+              <label for="name">Nombre:</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Mensaje:</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn">Enviar</button>
+            <button type="reset" class="btn">Limpiar</button>
+          </form>
+        </div>
       </section>
     </main>
 
-    <!-- Footer -->
     <footer class="footer">
-      <ul>
-        <li><a href="#header">Inicio</a></li>
-        <li><a href="#productos">Productos</a></li>
-        <li><a href="#ubicacion">Ubicación</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-        <li><a href="#pago">Forma de Pago</a></li>
-      </ul>
-      <p>&copy; 2025 - Todos los derechos reservados</p>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Libreria Sol</h3>
+            <p>La librería de tu barrio, junto a vos</p>
+          </div>
+          <div class="footer-section">
+            <h3>Menú</h3>
+            <ul class="footer-menu">
+              <li><a href="#inicio">Inicio</a></li>
+              <li><a href="#productos">Productos</a></li>
+              <li><a href="#ubicacion">Ubicación</a></li>
+              <li><a href="#contacto">Contacto</a></li>
+              <li><a href="/carrito.html">Carrito</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Contacto</h3>
+            <p>
+              <i class="fas fa-map-marker-alt"></i> Estanilao Lopez y 2 de
+              Abril, Villa Ocampo
+            </p>
+            <p><i class="fas fa-phone"></i> (3482)526537</p>
+            <p><i class="fas fa-envelope"></i> lmv1978@gmail.com</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Libreria Sol. Todos los derechos reservados.</p>
+        </div>
+      </div>
     </footer>
+
+    <script src="/js/scripts.js"></script>
+    <script src="/js/cargarPro.js"></script>
   </body>
 </html>
