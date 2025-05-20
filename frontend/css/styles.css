@@ -163,11 +163,10 @@ section {
 }
 
 .product-card:hover {
-  /* transform: translateX(-10px); */
-
-  transform: rotateY(180deg) ;
-  background-color: #666;
-  content-visibility: hidden;
+  transform: translateX(-10px);
+  box-shadow: -10px -4px 6px rgba(255, 255, 255, 0.619);
+  /* transform: rotateY(180deg) ; */
+    /* content-visibility: hidden; */
 }
 
 .product-card img {
