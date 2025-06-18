@@ -208,3 +208,15 @@ document.addEventListener('DOMContentLoaded', function() {
     updateCartCount();
     renderCart();
 });
+function scrollToSection(sectionId) {
+  const element = document.getElementById(sectionId);
+  if (element) {
+    const headerHeight = document.querySelector('.header').offsetHeight;
+    const elementPosition = element.offsetTop - headerHeight;
+    
+    window.scrollTo({
+      top: elementPosition,
+      behavior: 'smooth'
+    });
+  }
+}

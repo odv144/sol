@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Carrito de Compras - Escolaris</title>
+    <title>Libreria Sol</title>
     <link rel="stylesheet" href="/css/styles.css" />
     <link rel="stylesheet" href="/css/carrito.css" />
+    <link rel="stylesheet" href="/css/modal.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -71,16 +72,63 @@
               <hr />
               <p class="total">Total: <span>$0.00</span></p>
             </div>
-            <button class="btn checkout-btn" disabled>Proceder al Pago</button>
+            <button class="btn checkout-btn" id="openModal">Proceder al Pago</button>
           </div>
         </div>
       </div>
     </main>
 
     <footer class="footer">
-      <!-- El mismo footer que en index.html -->
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Libreria Sol</h3>
+            <p>La librería de tu barrio, junto a vos</p>
+          </div>
+          <div class="footer-section">
+            <h3>Menú</h3>
+            <ul class="footer-menu">
+              <li><a href="#inicio">Inicio</a></li>
+              <li><a href="#productos">Productos</a></li>
+              <li><a href="#ubicacion">Ubicación</a></li>
+              <li><a href="#contacto">Contacto</a></li>
+              <li><a href="/carrito.html">Carrito</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Contacto</h3>
+            <p>
+              <i class="fas fa-map-marker-alt"></i> Estanilao Lopez y 2 de
+              Abril, Villa Ocampo
+            </p>
+            <p><i class="fas fa-phone"></i> (3482)526537</p>
+            <p><i class="fas fa-envelope"></i> lmv1978@gmail.com</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Libreria Sol. Todos los derechos reservados.</p>
+        </div>
+      </div>
     </footer>
-
+     <div id="modal" class="modal">
+        <div class="modal-content" id="modalContent">
+            <div class="modal-header">
+                <h2 class="modal-title">✨ ¡Desea Confirmar el Pago!</h2>
+                <span class="close" id="closeModal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p>Usted esta por confirmar el pago de los productos seleccionado en el carrito.</p>
+                
+               <h3>¿Está seguro de que desea continuar?</h3>
+                <div class="modal-actions">
+                    <button class="btn btn-primary" id="confirmBtn">Confirmar</button>
+                    <button class="btn btn-secondary" id="cancelBtn">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+    <script src="/js/modal.js"></script>
     <script src="/js/scripts.js"></script>
   </body>
 </html>

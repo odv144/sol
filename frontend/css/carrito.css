@@ -1,7 +1,14 @@
 /* Estilos específicos para la página de carrito */
+main .container{
+    margin-top:50px;
+    display: flex;
+    flex-direction: column;
+}
 .cart-main {
+   margin-top:50px;
     padding: 4rem 0;
     min-height: 70vh;
+    
 }
 
 .cart-main h1 {

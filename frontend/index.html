@@ -26,16 +26,16 @@
         <nav class="navbar">
           <ul class="nav-menu">
             <li class="nav-item">
-              <a href="#inicio" class="nav-link">Inicio</a>
+              <a href="#inicio" class="nav-link" onclick="scrollToSection('section')">Inicio</a>
             </li>
             <li class="nav-item">
-              <a href="#productos" class="nav-link">Productos</a>
+              <a href="#productos" class="nav-link" onclick="scrollToSection('productos')">Productos</a>
             </li>
             <li class="nav-item">
-              <a href="#ubicacion" class="nav-link">Ubicación</a>
+              <a href="#ubicacion" class="nav-link" onclick="scrollToSection('ubicacion')">Ubicación</a>
             </li>
             <li class="nav-item">
-              <a href="#contacto" class="nav-link">Contacto</a>
+              <a href="#contacto" class="nav-link"onclick="scrollToSection('contacto')">Contacto</a>
             </li>
             <li class="nav-item">
               <a href="/carrito.html" class="nav-link">Carrito</a>
@@ -54,7 +54,7 @@
       </div>
     </header>
 
-    <main>
+    <main >
       <section id="inicio" class="hero-carousel">
         <div class="carousel-container">
           <div class="carousel-slide active">
@@ -78,7 +78,8 @@
             <div class="slide-content">
               <h1>Mochilas de calidad</h1>
               <p>Diseños ergonómicos y resistentes para todos los grados</p>
-              <a href="#productos" class="btn">Comprar ahora</a>
+              <a href="#productos" class="btn">Comprar</a>
+             
             </div>
           </div>
           <div class="carousel-slide">
@@ -105,7 +106,9 @@
           </div>
         </div>
       </section>
+      
       <section id="productos" class="products">
+       
         <div class="container">
           <h2>Categoria de Productos</h2>
           <div class="gallery"></div>
