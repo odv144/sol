@@ -43,7 +43,7 @@ main{
   color: var(--text-light);
   padding: 1rem 0;
   position: fixed;
-  width: 100%;
+  width: 100vw;
   top: 0;
   z-index: 1000;
 }
@@ -62,14 +62,14 @@ section {
   position: relative;
 }
 
-section::before {
+/* section::before {
   content: '';
   display: block;
   height: var(--header-height);
   margin-top: calc(-1 * var(--header-height));
   visibility: hidden;
   pointer-events: none;
-}
+} */
 .logo {
   font-size: 2.5rem;
   font-weight: bold;
@@ -149,12 +149,7 @@ section::before {
   display: flex;
   flex-direction: column;
 }
-.products h2 {
-  text-align: center;
-  margin-bottom: 2rem;
-  font-size: 2rem;
-  color: var(--primary-color);
-}
+
 
 .gallery {
   width: 100%;
@@ -199,7 +194,14 @@ section::before {
   padding: 0 1rem 1rem;
   color: #666;
 }
+/*video*/
+#video {
+  padding: 4rem;
+  position: relative;
+  text-align: center;
 
+
+}
 /* Location Section */
 .location {
   /* padding: 4rem 0; */
@@ -219,8 +221,14 @@ section::before {
 
 .map-container {
   border-radius: 8px;
+  
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.map-container iframe {
+  width: 90vw;
+  height: 90vw;
+  border: none;
 }
 
 /* Contact Section */
@@ -230,12 +238,6 @@ section::before {
   align-items: center;
 }
 
-.contact h2 {
-  text-align: center;
-  margin-bottom: 2rem;
-  font-size: 2rem;
-  color: var(--primary-color);
-}
 
 .contact-form {
   width: 90%;
@@ -271,19 +273,41 @@ section::before {
   min-height: 150px;
 }
 /* Reseñas*/
-.resenia-section {
+section > div.container {
   width: 100%;
   padding: 2rem 0;
-  display:flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
 }
+.container h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: var(--primary-color);
+}
 .resenia{
   display:grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
   gap: 2rem;
-  margin: 2rem 0;
+  padding: 2rem;
+  background: linear-gradient(#49b8f570, #cae9fa63);
+  border-radius: 25px;
 
+}
+.resenia-item p{
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.954);
+}
+.resenia-item img{
+  width:150px;
+  height:150px;
+  border-radius: 50%;
+}
+.rating{
+  color: rgb(127, 127, 11);
 }
 
 /* Footer */
@@ -350,9 +374,9 @@ section::before {
 }
 
 .hero-carousel {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("/img/logo.jpg") no-repeat center center/cover;
-  background-position: center;
+  background-position: center; */
 
   display: flex;
   align-items: center;
@@ -363,7 +387,7 @@ section::before {
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  margin-top: 60px;
+  /* margin-top: 60px; */
 }
 
 .carousel-container {
@@ -469,55 +493,4 @@ section::before {
 
 .dot.active {
   background-color: white;
-}
-/* Responsive Design */
-@media (max-width: 768px) {
-  :root{
-     --header-height: 80px; /* Móvil */
-  }
-  .hamburger {
-    display: block;
-  }
-
-  .nav-menu {
-    position: fixed;
-    left: -100%;
-    top: 60px;
-    flex-direction: column;
-    background-color: var(--primary-color);
-    width: 100%;
-    text-align: center;
-    transition: 0.3s;
-  }
-
-  .nav-menu.active {
-    left: 0;
-  }
-
-  .nav-item {
-    margin: 1rem 0;
-  }
-
-  /* Estilos para el carrusel */
-  /* Hero Section */
-
-  /* Responsive para el carrusel */
-
-  .slide-content h1 {
-    font-size: 1.8rem;
-  }
-
-  .slide-content p {
-    font-size: 1rem;
-  }
-
-  .carousel-btn {
-    padding: 0.8rem;
-    font-size: 1.2rem;
-  }
-
-  .dot {
-    width: 10px;
-    height: 10px;
-  }
 }
