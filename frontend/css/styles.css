@@ -285,14 +285,17 @@ section > div.container {
   margin-bottom: 2rem;
   font-size: 2rem;
   color: var(--primary-color);
+  text-shadow: 2px 2px 4px rgba(2, 2, 2, 0.968);
 }
 .resenia{
   display:grid;
-  grid-template-columns: repeat(3, minmax(250px, 1fr));
+  grid-template-columns: repeat(3, minmax(150px, 1fr));
   gap: 2rem;
   padding: 2rem;
   background: linear-gradient(#49b8f570, #cae9fa63);
   border-radius: 25px;
+  text-align: center;
+  width: 80vw;
 
 }
 .resenia-item p{
@@ -315,16 +318,18 @@ section > div.container {
   background-color: var(--dark-color);
   color: var(--text-light);
   padding: 3rem 0 0;
+  width: 100%;
 }
 .footer > div.container {
-  display: flex;
-  flex-direction: column;
+   display: flex;
+  flex-direction: column; 
   align-items: center;
+
 }
 .footer-content {
-  display: flex;
-  flex-direction: row;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  display: grid;
+
+  grid-template-columns: minmax(250px, 1fr) 200px minmax(250px, 1fr);
   gap: 2rem;
   margin-bottom: 2rem;
 }
