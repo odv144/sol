@@ -1,4 +1,3 @@
-
 // Referencias a elementos del DOM
 
 const modal = document.getElementById("modal");
@@ -90,7 +89,7 @@ confirmBtn.addEventListener("click", function () {
   } else {
     messageBody += "El carrito está vacío.\n\n";
   }
-  
+
   const dataToSend = {
     name: "Usuario de Prueba",
     email: "prueba@example.com", // Es bueno incluir un email para que Formspree lo reconozca
@@ -113,6 +112,8 @@ confirmBtn.addEventListener("click", function () {
         // Verifica si la respuesta es exitosa (código 2xx)
         console.log("Correo enviado con éxito!");
         alert("¡Tu mensaje ha sido enviado!"); // O algún otro feedback al usuario
+        localStorage.removeItem("cart"); // Limpia el carrito después de enviar el pedido
+        windows.location.reload(); // Recarga la página para reflejar los cambios
         closeModal(); // Cierra el modal si la operación fue exitosa
         return response.json(); // Parsea la respuesta JSON si hay
       } else {
@@ -135,8 +136,8 @@ confirmBtn.addEventListener("click", function () {
       alert("Ocurrió un error de red. Por favor, verifica tu conexión.");
       closeModal();
     });
-    localStorage.removeItem("cart"); // Limpia el carrito después de enviar el pedido
-    //updateCartCount(); // Actualiza el contador del carrito
+
+ 
 });
 
 cancelBtn.addEventListener("click", function () {

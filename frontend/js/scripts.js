@@ -1,9 +1,32 @@
 
 document.addEventListener('DOMContentLoaded', function() {
+  // Vincular el botón de confirmar pago del modal
+    const confirmarPagoBtn = document.getElementById('confirmBtn');
+    if (confirmarPagoBtn) {
+        confirmarPagoBtn.addEventListener('click', function() {
+            localStorage.removeItem('cart');
+            cart = [];
+            updateCartCount();
+            renderCart();
+            // Cierra el modal si es necesario
+            // document.getElementById('miModal').style.display = 'none';
+        });
+    }
+//   document.body.addEventListener('click', function(e) {
+//         if (e.target.classList.contains('confirmBtn')) {
+//             localStorage.removeItem('cart');
+//             cart = [];
+//             updateCartCount();
+//             renderCart();
+//             // Cierra el modal si es necesario
+//             // document.getElementById('miModal').style.display = 'none';
+//         }
+//     });
+
+
     // Menú hamburguesa
     const hamburger = document.querySelector('.hamburger');
     const navMenu = document.querySelector('.nav-menu');
-
     if (hamburger && navMenu) {
         hamburger.addEventListener('click', function() {
             hamburger.classList.toggle('active');
