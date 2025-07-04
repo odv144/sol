@@ -16,6 +16,18 @@ const products = [
         name: 'Bolsas',
         description: 'Bolsas de papel y tela',
         image: 'https://i.postimg.cc/bvHyhPpj/geometria.jpg'
+    },
+    {
+        id: 4,
+        name: 'Libros',
+        description: 'Libros de texto y literatura',
+        image: 'https://i.postimg.cc/MpL5JcvP/unnamed.png'
+    },
+    {
+        id: 5,
+        name: 'Tijeras',
+        description: 'Tijeras de seguridad y escolares',
+        image: 'https://i.postimg.cc/tg9dFhZM/tijeras.jpg'
     }
 ];
 
