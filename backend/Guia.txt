@@ -1,0 +1,11 @@
+Ejemplos de sintaxis para realizar las pruebas.
+
+npm start get products
+npm start get products/2
+npm start post products title price description category image
+npm start put products/2 title price description category image
+npm start delete products/2
+
+Ejemplo 
+npm start post products Short 25000 Short-playa pantalon /image/algo
+
